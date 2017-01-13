@@ -1,11 +1,11 @@
 ### Setup Commands for AlienVault OSSIM Virtualbox image on Google Cloude
 
-`dhawal@EDI:~/Documents/Test_VM/av-ossim|`
-*⇒  tar -cSzf dhawalossim-5.tar.gz disk.raw*
+`dhawal@EDI:~/Documents/Test_VM/av-ossim|
+*⇒  tar -cSzf dhawalossim-5.tar.gz disk.raw*`
 
 
-`dhawal@EDI:~/Documents/Test_VM/av-ossim|`
-*⇒  gsutil cp dhawalossim-5.tar.gz gs://dhawalossim/dhawalossim-5.tar.gz*
+`dhawal@EDI:~/Documents/Test_VM/av-ossim|
+*⇒  gsutil cp dhawalossim-5.tar.gz gs://dhawalossim/dhawalossim-5.tar.gz*`
 Copying file://dhawalossim-5.tar.gz [Content-Type=application/x-tar]...
 ==> NOTE: You are uploading one or more large file(s), which would run          
 significantly faster if you enable parallel composite uploads. This
@@ -22,8 +22,8 @@ so slow that gsutil disables downloads of composite objects.
 | [1 files][  1.7 GiB/  1.7 GiB]    2.8 MiB/s                                   
 Operation completed over 1 objects/1.7 GiB.`
 
-`dhawal@EDI:~/Documents/Test_VM/av-ossim|`
-*⇒  gcloud*
+`dhawal@EDI:~/Documents/Test_VM/av-ossim|
+*⇒  gcloud*`
 Usage: gcloud [optional flags] <group | command>
   group may be           app | auth | components | compute | config |
                          container | dataflow | dataproc | datastore |
@@ -36,5 +36,5 @@ For detailed information on this command and its flags, run:
   gcloud --help
 
 
-`dhawal@EDI:~/Documents/Test_VM/av-ossim|`
-*⇒  gcloud compute images create av-ossim --source-uri gs://dhawalossim/dhawalossim-5.tar.gz*
+`dhawal@EDI:~/Documents/Test_VM/av-ossim|
+*⇒  gcloud compute images create av-ossim --source-uri gs://dhawalossim/dhawalossim-5.tar.gz*`
