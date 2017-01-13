@@ -38,3 +38,6 @@ For detailed information on this command and its flags, run:
 
 `dhawal@EDI:~/Documents/Test_VM/av-ossim|
 *⇒  gcloud compute images create av-ossim --source-uri gs://dhawalossim/dhawalossim-5.tar.gz*`
+
+`dhawal@EDI:~/Documents/Test_VM/av-ossim|
+⇒  gcloud instances create ossim-server --image dhawalossim --machine-type f1-micro --zone asia-east1-c`
