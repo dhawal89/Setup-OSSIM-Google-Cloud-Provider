@@ -1,6 +1,7 @@
 ### Setup Commands for AlienVault OSSIM Virtualbox image on Google Cloude
 
 Step1:
+-------
 
 Install the iso of OSSIM in Virtual box as per Normal Procedures only,
 Have to configure these things when you create VBox VM.
@@ -14,6 +15,7 @@ Have to configure these things when you create VBox VM.
 And Install and Update you VM OS in virtualbox.
 
 Step2:
+-------
 
 Configure GRUB Loader as per GCP Requirements
 
@@ -29,6 +31,7 @@ Configure GRUB Loader as per GCP Requirements
 5. Edit the /etc/fstab file and remove references to all disks and partitions other than the boot disk itself and partitions      on that boot disk. Invalid entries in /etc/fstab can cause your system startup process to halt.
 
 Step3:
+-------
 
 After you configure the bootloader Create and compress the disk image.
 
@@ -46,6 +49,7 @@ If you prepared your system in a VirtualBox environment, you can use the VBoxMan
      *⇒tar -Sczf dhawalossim-5.tar.gz disk.raw*`
 
 Step4:
+-------
 
 The image file is compressed and ready to upload to Google Cloud Storage.
 `#:~/Documents/Test_VM/av-ossim|
