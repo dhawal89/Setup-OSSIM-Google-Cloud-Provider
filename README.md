@@ -7,10 +7,10 @@ Install the iso of OSSIM in Virtual box as per Normal Procedures only,
 Have to configure these things when you create VBox VM.
 
 1. Create VM make sure your disk size is 10, 20,30,40 not as (10.5GB)=> Not accepted by GCP. 
-2. Create VM with HHD format type of QCOW recommended for GCP.
+2. Create VM with HDD format type of QCOW recommended for GCP.
 3. Disable the Floopy disk drive.
 4. Disable the Audio as not needed in GCP.
-5. Configure Netowrk Adaptar Type : `Paravirtualized Network (virtio-net)`
+5. Configure Netowrk Adaptar Type : `Paravirtualized Network (virtio-net)` recommended for GCP.
 
 And Install and Update you VM OS in virtualbox.
 
