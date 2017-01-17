@@ -1,4 +1,4 @@
-### Setup Commands for AlienVault OSSIM Virtualbox image on Google Cloude
+## Setup Commands for AlienVault OSSIM Virtualbox image on Google Cloude
 
 Step1:
 -------
