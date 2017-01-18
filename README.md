@@ -71,7 +71,7 @@ so slow that gsutil disables downloads of composite objects.
 Operation completed over 1 objects/1.7 GiB.`
 
 `#:~/Documents/Test_VM/av-ossim|
-*⇒  gcloud*`
+⇒  gcloud`
 Usage: gcloud [optional flags] <group | command>
   group may be           app | auth | components | compute | config |
                          container | dataflow | dataproc | datastore |
@@ -85,7 +85,7 @@ For detailed information on this command and its flags, run:
 
 
 `#:~/Documents/Test_VM/av-ossim|
-*⇒gcloud compute images create av-ossim --source-uri gs://dhawalossim/dhawalossim-5.tar.gz*`
+⇒gcloud compute images create av-ossim --source-uri gs://dhawalossim/dhawalossim-5.tar.gz`
 
 `#:~/Documents/Test_VM/av-ossim|
 ⇒gcloud instances create ossim-server --image dhawalossim --machine-type f1-micro --zone asia-east1-c`
