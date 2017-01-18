@@ -38,22 +38,28 @@ After you configure the bootloader Create and compress the disk image.
 If you prepared your system in a VirtualBox environment, you can use the VBoxManage tool to convert a .vdi or .qcow2 disk image to disk.raw format.
 
 1. Shut down the VirtualBox guest machine that you want to import. You can shut down the guest machine with the VirtualBox        interface or the VBoxManage utility.
+
     `#:~VBoxManage controlvm [GUEST_NAME] acpipowerbutton`
+    
     where [GUEST_NAME] is the name of the guest machine.
 2. Convert the guest image to RAW format with the VBoxManage utility:
-    `#:~ VBoxManage clonehd [GUEST_IMAGE] \
-    ~/disk.raw --format RAW`
+
+    `#:~ VBoxManage clonehd [GUEST_IMAGE] \ ~/disk.raw --format RAW`
+    
     where [GUEST_IMAGE] is the path to the guest image .vdi or .qcow file.
 3. Compress the raw disk into tar.gz format. This step compresses the image file so that you can more quickly upload it to        Google Cloud Storage. On OSX, install gtar and use it for this step instead of tar.
+    
     `#:~/Documents/Test_VM/av-ossim|
-     *⇒tar -Sczf dhawalossim-5.tar.gz disk.raw*`
+     ⇒tar -Sczf dhawalossim-5.tar.gz disk.raw`
 
 Step4:
 -------
 
 The image file is compressed and ready to upload to Google Cloud Storage.
+
 `#:~/Documents/Test_VM/av-ossim|
-*⇒  gsutil cp dhawalossim-5.tar.gz gs://dhawalossim/dhawalossim-5.tar.gz*`
+⇒  gsutil cp dhawalossim-5.tar.gz gs://dhawalossim/dhawalossim-5.tar.gz`
+
 Copying file://dhawalossim-5.tar.gz [Content-Type=application/x-tar]...
 ==> NOTE: You are uploading one or more large file(s), which would run          
 significantly faster if you enable parallel composite uploads. This
@@ -72,6 +78,7 @@ Operation completed over 1 objects/1.7 GiB.`
 
 `#:~/Documents/Test_VM/av-ossim|
 ⇒  gcloud`
+
 Usage: gcloud [optional flags] <group | command>
   group may be           app | auth | components | compute | config |
                          container | dataflow | dataproc | datastore |
