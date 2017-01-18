@@ -20,14 +20,14 @@ Step2:
 Configure GRUB Loader as per GCP Requirements
 
 1. Connect to terminal on VM system so that it can not boot in compute engine.
-2. Edit the GRUB config file. Usually this file is at /etc/default/grub, but on some older distributions it might be located      in a non-standard directory.
+2. Edit the GRUB config file. Usually this file is at `/etc/default/grub`, but on some older distributions it might be located      in a non-standard directory.
 3. Make the following changes to the GRUB config file:
    - Remove any line that has splashimage=. Compute Engine does not support splash screens on boot.
    - Remove the rhgb and quiet kernel command line arguments.
    - Add console=ttyS0,38400n8d to the kernel command line arguments so that the instance can function with the Interactive        Serial Console.
 4. Regenerate the grub.cfg file. Use one of the following commands depending on your distribution.
-   - Debian and Ubuntu: sudo update-grub
-   - RHEL, CentOS, SUSE, openSUSE: sudo grub-mkconfig -o /boot/grub/grub.cfg
+   - Debian and Ubuntu: `sudo update-grub`
+   - RHEL, CentOS, SUSE, openSUSE: `sudo grub-mkconfig -o /boot/grub2/grub.cfg`
 5. Edit the /etc/fstab file and remove references to all disks and partitions other than the boot disk itself and partitions      on that boot disk. Invalid entries in /etc/fstab can cause your system startup process to halt.
 
 Step3:
