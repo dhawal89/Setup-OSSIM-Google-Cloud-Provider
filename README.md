@@ -50,7 +50,7 @@ If you prepared your system in a VirtualBox environment, you can use the VBoxMan
 3. Compress the raw disk into tar.gz format. This step compresses the image file so that you can more quickly upload it to        Google Cloud Storage. On OSX, install gtar and use it for this step instead of tar.
     
     `#:~/Documents/Test_VM/av-ossim|
-     ⇒tar -Sczf dhawalossim-5.tar.gz disk.raw`
+     ⇒gtar -Sczf dhawalossim-5.tar.gz disk.raw`
 
 Step4:
 -------
