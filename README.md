@@ -19,7 +19,7 @@ Step2:
 
 Configure GRUB Loader as per GCP Requirements
 
-1. Connect to terminal on VM system so that it can not boot in compute engine.
+1. Connect to terminal on VM system ossim which can be done my Jailbraking system option.
 2. Edit the GRUB config file. Usually this file is at `/etc/default/grub`, but on some older distributions it might be located      in a non-standard directory.
 3. Make the following changes to the GRUB config file:
    - Remove any line that has splashimage=. Compute Engine does not support splash screens on boot.
