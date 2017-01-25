@@ -99,7 +99,7 @@ For detailed information on this command and its flags, run:
 
 For Serial Port enable while creating Instance on GCE:
 
-`gcloud compute instances create ossim-test4 --zone asia-east1-c --image ossim-4d --machine-type f1-micro --metadata=serial-port-enable=1`
+`gcloud compute instances create ossim-test4 --zone asia-east1-c --image ossim-4d --custom-cpu 1 --custom-memory 2 --metadata=serial-port-enable=1`
 
 Now connect via serial Console to Instance:
 `gcloud beta compute --project "omise-experimental" connect-to-serial-port "ossim-test2" --zone "asia-east1-c"`
