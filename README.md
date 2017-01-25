@@ -95,4 +95,8 @@ For detailed information on this command and its flags, run:
 ⇒gcloud compute images create av-ossim --source-uri gs://dhawalossim/dhawalossim-5.tar.gz`
 
 `#:~/Documents/Test_VM/av-ossim|
-⇒gcloud instances create ossim-server --image dhawalossim --machine-type f1-micro --zone asia-east1-c`
+⇒ gcloud instances create ossim-server --image dhawalossim --machine-type f1-micro --zone asia-east1-c`
+
+```
+For Serial Port enable while creating Instance on GCE```
+`gcloud compute instances create ossim-test4 --zone asia-east1-c --image ossim-4d --machine-type f1-micro --metadata=serial-port-enable=1`
